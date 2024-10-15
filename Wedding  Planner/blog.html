@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Link to Bootstrap CSS for responsive design and basic styling -->
+  <link rel="stylesheet" href="./assest/css/bootstrap.min.css" />
+  <!-- Link to custom CSS for additional styling -->
+  <link rel="stylesheet" href="./assest/css/Style.css" />
+  <link rel="stylesheet" href="./assest/css/responsive.css" />
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="./assest/css/fontawesome.min.css">
+  <link rel="stylesheet" href="./assest/css/all.min.css">
+  <!-- Link to owl carousel  for the blog carousel/slider -->
+  <link rel="stylesheet" href="./assest/css/owl.carousel.css">
+  <link rel="stylesheet" href="./assest/css/owl.theme.green.min.css">
+  <title>Wedding planner</title>
+</head>
+
+<body>
+     <!-------------------------------------------------- HEADER SECTION START ----------------------------->
+
+     <div class="navbar  navbar-expand-lg  fixed-top">
+      <span class="logo"> <a class="navbar-brand m-0" href="#"> <img src="./assest/images/Logo.png" alt=""></a>Buzz</span>
+      <div  class="navbar-nav-items  gap-4">
+          <a href="./index.html" class="nav-link-items">Home</a>
+          <a href="./Service.html" class="nav-link-items">Services </a>
+          <a href="./blog.html" class="nav-link-items">Blog</a>
+          <a href="./gallery.html" class="nav-link-items">Gallery</a>
+          <a href="./Pricing.html" class="nav-link-items">Pricing</a>
+          <a href="#faqs" class="nav-link-items   ">FAQs</a>
+      </div >
+      <div class="navbar-controls ">
+        <button class="navbar-navBtn" type="button"><span id="call-btn">Contact Us
+          </span></button>
+        <button class="navbar-navBtn" type="button"><a class="nav-link-items" href="./sign.html"><img src="" alt="">Sign Out</a></button>
+        <span id="menu-bars" onclick="showMenu()"><i class="fa-solid fa-bars " ></i></span>
+  
+      </div> 
+     
+  </div>
+  <!-------------------------------------------------- HOME SECTION START ----------------------------------->
+  <!-- banner   -->
+  <div class="container-fluid  gallery-banner mb-5 " id="banner" >
+    <div class="row " style="padding-top: 10%;" >
+      <div class="head-wrap  py-5 m-0">
+        <h6>Our Latest  and ceartive Blogs  </h6>
+        <h6> For You </h6></div>
+  </div>
+  <!-- Blog section with a heading and carousel -->
+  <p class="subtitle text-center mt-5 ">Affordable Luxury </p>
+  <h2 class="title text-center mb-5">Explore Our Budget-Friendly Wedding Services</h2>
+  <div class="owl-carousel owl-theme mt-5 blog-wrapper">
+    <!-- Blog cards will be populated here through JavaScript -->
+  </div>
+  <div class="container-fluid ">
+    <div class="mt-5 mb-0 text-center" id="show-more-btn">Show more</div>
+    <div class="lds-roller  " id="loader">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+    <div class="owl-carousel owl-theme" id="hideContentWrapper">
+      <!-- Your JSON data will be loaded here -->
+    </div>
+  </div>
+  <!-- Faqs section start -->
+  <section id="faqs" class="faqs-wrapper mb-5">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <p class="subtitle">We're Here to Make Your Day Perfect</p>
+          <h2 class="title">Frequently Asked Questions</h2>
+        </div>
+      </div>
+      <div class="row align-item-center">
+        <div class="col-sm-12 col-lg-8 mb-5 mb-lg-0">
+          <div class="accordion" id="accordionExample">
+
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  1. What services do you offer for wedding planning?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>We offer a full range of wedding planning services, including venue selection, vendor coordination,
+                    design and decor, catering, and day-of coordination. Our goal is to make your special day as
+                    stress-free and memorable as possible.</p>
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2. How far in advance should we start planning our wedding?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>We recommend starting your wedding planning at least 12 to 18 months in advance. This allows ample
+                    time to secure your desired venue and vendors, as well as to plan all the details to perfection.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. Can you help us find a wedding venue?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Absolutely! We have a curated list of venues in various locations to fit different styles and
+                    budgets. We'll work with you to find the perfect venue that aligns with your vision.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  4. Do you offer day-of coordination services?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Yes, we offer day-of coordination to ensure everything runs smoothly on your wedding day. Our team
+                    will handle all the logistics, so you can focus on enjoying your special day.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  5. How much do your wedding planning services cost?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Our pricing varies depending on the services you need and the complexity of your wedding. We offer
+                    customizable packages to fit your budget. Please contact us for a personalized quote.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 d-flex align-items-center">
+          <img src="./assest/images/Faq.png" alt="Wedding Planning FAQs" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Faqs section end -->
+ <!-- footer section  enter  -->
+ <div class="container-fluid mt-5  text-center">
+  <div class="row mt-0   footer">
+    <div class="col-md-5    ">
+      <div >
+        <li><span class="text-dark footer-heading">Contact us</span></li>
+        <li><i class="fa-solid fa-phone"></i> <a class="text-dark      text-decoration-none" href="#">92212571151
+          </a></li>
+        <li><i class="fa-solid fa-phone"></i> <a class="text-dark      text-decoration-none" href="#">92332571151</a>
+        </li>
+        <li><i class="fa-solid fa-phone"></i> <a class="text-dark      text-decoration-none" href="#">021-8255635</a>
+        </li>
+        <li><i class="fa-solid fa-phone"></i> <a class="text-dark      text-decoration-none" href="#">033-7645342</a>
+        </li>
+        <li><i class="fa-solid fa-envelope"></i><a class="text-dark    text-decoration-none"
+            href="#">Sam@gmail.com</a></li>
+        <li><i class="fa-solid fa-envelope"></i><a class="text-dark    text-decoration-none"
+            href="#">Ali@gmail.com</a></li>
+      </div >
+    </div>
+    <div class="col-md-4  ">
+      <div >
+        <li><span class="text-dark  footer-heading">Quick links</span></li>
+        <li><i class="fa-solid fa-arrow-right"></i><a class="text-dark  text-decoration-none"
+            href="./index.html">Home</a></li>
+        <li><i class="fa-solid fa-arrow-right"></i> <a class="text-dark  text-decoration-none"
+            href="./Service.html">Services</a></li>
+        <li> <i class="fa-solid fa-arrow-right"></i><a class="text-dark text-decoration-none"
+            href="./blog.html">Blogs</a></li>
+        <li><i class="fa-solid fa-arrow-right"></i><a class="text-dark text-decoration-none"
+            href="./gallery.html">Gallery</a></li>
+        <li><i class="fa-solid fa-arrow-right"></i><a class="text-dark  text-decoration-none"
+            href="./Pricing.html">Pricing</a></li>
+
+      </div >
+    </div>
+    <div class="col-md-3  ">
+      <div >
+        <li><span class="text-dark footer-heading">Branches</span></li>
+        <li><i class="fa-solid fa-location-dot"></i><a class="text-dark text-decoration-none" href="#">Karachi</a>
+        </li>
+        <li><i class="fa-solid fa-location-dot"></i><a class="text-dark text-decoration-none" href="#">Lahore</a>
+        </li>
+        <li><i class="fa-solid fa-location-dot"></i><a class="text-dark text-decoration-none" href="#">Multan</a>
+        </li>
+        <li><i class="fa-solid fa-location-dot"></i><a class="text-dark text-decoration-none" href="#">Quetta</a>
+        </li>
+      </div >
+
+    </div> 
+  </div>
+</div>
+<!-- footer section exit -->
+
+  <!-- js files link -->
+  <!-------------------------------------js link --------------------------------------------->
+  <script src="./assest/js/data.js"></script>
+  <script src="./assest/js/jquery.min.js"></script>
+  <script src="./assest/js/owl.carousel.min.js"></script>
+  <script src="./assest/js/bootstrap.bundle.min.js"></script>
+  
+  <script>
+  $(document).ready(function(){
+    $('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    stagePadding:20,
+    responsiveClass:true,
+    responsive:{
+        0:{
+            items:1,
+            nav:true
+        },
+
+        830:{
+          items: 3,
+      
+        },
+        500:{
+            items:2,
+            nav:false
+        },
+        1000:{
+            items:3,
+            nav:true,
+            loop:false
+        }
+    }
+})
+   })
+
+
+    //  blog  cards function 
+    function blogs() {
+      let blogContent = document.querySelector('.blog-wrapper');
+      blogData.forEach((blog) => {
+        let blogDiv = document.createElement('div');
+        blogDiv.classList.add('item', 'blog-card');
+        blogDiv.insertAdjacentHTML('afterbegin', `
+      <img src="${blog.img}" alt="${blog.alt}">
+      <div class='blog-text'>
+        <a href="" class="blog-card-link">${blog.link}</a>
+        <span class="blog-name">${blog.blogName}</span>
+        <small class="blog-date">| ${blog.blogDate} |</small>
+        <span class="small">${blog.blogComment}</span>
+        <p class="card-text">${blog.blogDescription}</p>
+      </div>
+    `);
+        blogContent.appendChild(blogDiv);
+      });
+      return blogContent;
+    };
+
+    blogs();
+    //  hide blog function 
+    function hideBlogs() {
+      let hideContainer = document.querySelector('#hideContentWrapper');
+      hideContent.forEach((content) => {
+        let hideDiv = document.createElement('div');
+        hideDiv.classList.add('item', 'blog-card');
+        hideDiv.insertAdjacentHTML('afterbegin', `
+      <img src="${content.Img}" alt="${content.alt}">
+      <div class='blog-text'>
+        <a href="" class="blog-card-link">${content.link}</a>
+        <span class="blog-name">${content.blogName}</span>
+        <small class="blog-date">| ${content.blogDate} |</small>
+        <span class="small">${content.blogComment}</span>
+        <p class="card-text">${content.blogDescription}</p>
+      </div>`)
+        hideContainer.appendChild(hideDiv);
+      });
+
+      let hideContentWrapper = document.querySelector('#hideContentWrapper');
+      let showMoreBtn = document.querySelector('#show-more-btn');
+      let loader = document.querySelector('#loader');
+
+      // Function to toggle visibility
+      function toggle() {   
+        showMoreBtn.addEventListener('click', () => {
+          if(showMoreBtn.innerText === 'Show more'){
+          loader.style.display = 'block'
+          function loading() {
+            hideContainer.style.display = 'block';
+            showMoreBtn.innerText = 'Show less'
+            loader.style.display = 'none'
+          }
+          setTimeout(() => {
+            loading()
+          }, 1000)
+        }else{
+          hideContainer.style.display = 'none';
+            showMoreBtn.innerText = 'Show more'
+            loader.style.display = 'none'
+        }
+        })
+       
+        
+      }
+      toggle()
+      return hideContainer;
+
+    }
+    hideBlogs();
+
+  </script>
+</body>
+
+</html>

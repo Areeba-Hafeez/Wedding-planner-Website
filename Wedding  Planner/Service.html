@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- Link to Bootstrap CSS for responsive design and basic styling -->
+  <link rel="stylesheet" href="./assest/css/bootstrap.min.css" />
+  <!-- Link to custom CSS for additional styling -->
+  <link rel="stylesheet" href="./assest/css/Style.css" />
+  <link rel="stylesheet" href="./assest/css/responsive.css" />
+  <!-- Link to Font Awesome for icons -->
+  <link rel="stylesheet" href="./assest/css/fontawesome.min.css">
+  <link rel="stylesheet" href="./assest/css/all.min.css">
+  <!-- link of  sweet alerts  -->
+  <link rel="stylesheet" href="./assest/css/sweet-alert.css">
+
+  <title>Wedding planner</title>
+</head>
+
+<body>
+ 
+     <!-------------------------------------------------- HEADER SECTION START ----------------------------->
+
+     <div class="navbar  navbar-expand-lg  fixed-top">
+      <span class="logo"> <a class="navbar-brand m-0" href="#"> <img src="./assest/images/Logo.png" alt=""></a>Buzz</span>
+      <div  class="navbar-nav-items  gap-4 ">
+          <a href="./index.html" class="nav-link-items  ">Home</a>
+          <a href="./Service.html" class="nav-link-items  ">Services </a>
+          <a href="./blog.html" class="nav-link-items  ">Blog</a>
+          <a href="./gallery.html" class="nav-link-items   ">Gallery</a>
+          <a href="./Pricing.html" class="nav-link-items   ">Pricing</a>
+          <a href="#faqs" class="nav-link-items   ">FAQs</a>
+      </div >
+      <div class="navbar-controls ">
+        <!-- <i class="fa-solid fa-phone m-1 "></i>  -->
+        <button class="navbar-navBtn" type="button"><span id="call-btn">Contact Us
+          </span></button>
+        <button class="navbar-navBtn" type="button"><a class="nav-link-items" href="./sign.html"><img src="" alt="">Sign Out</a></button>
+        <span id="menu-bars" onclick="showMenu()"><i class="fa-solid fa-bars " ></i></span>
+  
+      </div> 
+  </div>
+  <!-- banner   -->
+  <div class=" container-fluid service-banner" id="banner">
+    <div class="row mt-5 py-5 ">
+      <div class="col-md-6 col-sm-6   d-flex justify-content-center align-items-center">
+        <div class=" input-search-container">
+          <div class="input-wrapper">
+            <input type="text" class="search-input" id="service-search-input" placeholder="search">
+            <i class="fa-solid fa-magnifying-glass" id='search-btn'></i>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-sm-6 ">
+        <img src="./assest/images/home.png" alt="">
+      </div>
+    </div>
+    <!-- <div class="contact-number-box hide ">
+      <i class="fa-solid fa-xmark" id="close-btn"></i>
+      <div class="contact-heading mt-2  ">
+        <h2>Call for Consultation</h2>
+      </div>
+      <div class="contact-NumberWrapper  d-flex  justify-content-between align-items-center"> <span class="fs-4"><i
+            class="fa-solid fa-phone m-2 fs-4"></i><input type="text" id="ourContact-number" readonly
+            value="03148239563"></span><button class="learn-more-btn" id="copiedBtn">Copy</button></div>
+    </div> -->
+  </div>
+
+  <!-- Services cards start -->
+  <p class="subtitle  service-title text-center">Turning Moments into Memories</p>
+  <h2 class="title text-center">Explore Our Premium Wedding Services</h2>
+
+  <div class="container-fluid  d-flex justify-content-center align-items-center  text-center">
+    <div class="row mt-0   text-center align-items-center   service-container">
+
+    </div>
+  </div>
+  <!-- Services cards end -->
+  <!-- Faqs section start -->
+  <section id="faqs" class="faqs-wrapper">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-12 text-center mb-5">
+          <p class="subtitle">We're Here to Make Your Day Perfect</p>
+          <h2 class="title">Frequently Asked Questions</h2>
+        </div>
+      </div>
+      <div class="row align-item-center">
+        <div class="col-sm-12 col-lg-8 mb-5 mb-lg-0">
+          <div class="accordion" id="accordionExample">
+
+            <!-- FAQ 1 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                  aria-expanded="true" aria-controls="collapseOne">
+                  1. What services do you offer for wedding planning?
+                </button>
+              </h2>
+              <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>We offer a full range of wedding planning services, including venue selection, vendor coordination,
+                    design and decor, catering, and day-of coordination. Our goal is to make your special day as
+                    stress-free and memorable as possible.</p>
+                </div>
+              </div>
+            </div>
+            <!-- FAQ 2 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                  2. How far in advance should we start planning our wedding?
+                </button>
+              </h2>
+              <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>We recommend starting your wedding planning at least 12 to 18 months in advance. This allows ample
+                    time to secure your desired venue and vendors, as well as to plan all the details to perfection.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 3 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                  3. Can you help us find a wedding venue?
+                </button>
+              </h2>
+              <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Absolutely! We have a curated list of venues in various locations to fit different styles and
+                    budgets. We'll work with you to find the perfect venue that aligns with your vision.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 4 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+                  4. Do you offer day-of coordination services?
+                </button>
+              </h2>
+              <div id="collapseFour" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Yes, we offer day-of coordination to ensure everything runs smoothly on your wedding day. Our team
+                    will handle all the logistics, so you can focus on enjoying your special day.</p>
+                </div>
+              </div>
+            </div>
+
+            <!-- FAQ 5 -->
+            <div class="accordion-item">
+              <h2 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+                  5. How much do your wedding planning services cost?
+                </button>
+              </h2>
+              <div id="collapseFive" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                <div class="accordion-body">
+                  <p>Our pricing varies depending on the services you need and the complexity of your wedding. We offer
+                    customizable packages to fit your budget. Please contact us for a personalized quote.</p>
+                </div>
+              </div>
+            </div>
+
+          </div>
+        </div>
+        <div class="col-sm-12 col-lg-4 d-flex align-items-center">
+          <img src="./assest/images/Faq.png" alt="Wedding Planning FAQs" class="img-fluid">
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Faqs section end -->
+  <!-- footer section start   -->
+  <div class="container-fluid mt-5 text-center">
+    <div class="row  mt-0   footer">
+      <div class="col-sm-5   ">
+        <ul>
+          <li><span class="text-dark footer-heading">Contact us</span></li>
+          <li><i class="fa-solid fa-phone"></i> <a class="text-dark      text-decoration-none" href="#">92212571151
+            </a></li>
+          <li><i class="fa-solid fa-phone"></i> <a class="text-dark      text-decoration-none" href="#">92332571151</a>
+          </li>
+          <li><i class="fa-solid fa-phone"></i> <a class="text-dark      text-decoration-none" href="#">021-8255635</a>
+          </li>
+          <li><i class="fa-solid fa-phone"></i> <a class="text-dark      text-decoration-none" href="#">033-7645342</a>
+          </li>
+          <li><i class="fa-solid fa-envelope"></i><a class="text-dark    text-decoration-none"
+              href="#">Sam@gmail.com</a></li>
+          <li><i class="fa-solid fa-envelope"></i><a class="text-dark    text-decoration-none"
+              href="#">Ali@gmail.com</a></li>
+        </ul>
+      </div>
+      <div class="col-sm-4 ">
+        <ul>
+          <li><span class="text-dark  footer-heading">Quick links</span></li>
+          <li><i class="fa-solid fa-arrow-right"></i><a class="text-dark  text-decoration-none"
+              href="./index.html">Home</a></li>
+          <li><i class="fa-solid fa-arrow-right"></i> <a class="text-dark  text-decoration-none"
+              href="./Service.html">Services</a></li>
+          <li> <i class="fa-solid fa-arrow-right"></i><a class="text-dark text-decoration-none"
+              href="./blog.html">Blogs</a></li>
+          <li><i class="fa-solid fa-arrow-right"></i><a class="text-dark text-decoration-none"
+              href="./gallery.html">Gallery</a></li>
+          <li><i class="fa-solid fa-arrow-right"></i><a class="text-dark  text-decoration-none"
+              href="./Pricing.html">Pricing</a></li>
+
+        </ul>
+      </div>
+      <div class="col-sm-3    ">
+        <ul>
+          <li><span class="text-dark footer-heading">Branches</span></li>
+          <li><i class="fa-solid fa-location-dot"></i><a class="text-dark text-decoration-none" href="#">Karachi</a>
+          </li>
+          <li><i class="fa-solid fa-location-dot"></i><a class="text-dark text-decoration-none" href="#">Lahore</a>
+          </li>
+          <li><i class="fa-solid fa-location-dot"></i><a class="text-dark text-decoration-none" href="#">Multan</a>
+          </li>
+          <li><i class="fa-solid fa-location-dot"></i><a class="text-dark text-decoration-none" href="#">Quetta</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+    </div>
+  <!-- footer section exit -->
+  <!-------------------------------------js link --------------------------------------------->
+  <script src="./assest/js/data.js"></script>
+  <script src="./assest/js/bootstrap.bundle.min.js"></script>
+  <script src="./assest/js/alert.min.js"></script>
+  <script src="./assest/js/index.js"></script>
+  <script>
+    let servicesWrapper = document.querySelector('.service-container');
+    let searchInput = document.getElementById('service-search-input');
+
+    function renderServices(filteredServices) {
+      let ourServices = '';
+
+      // Check if there are any services to display
+      if (filteredServices.length === 0) {
+        ourServices = `<div class="not-found-message">No services found matching your query!</div>`;
+      } else {
+        filteredServices.forEach((serv) => {
+          ourServices += `
+        <div class="services-wrapper-box">
+          <div class="services-image-box">
+            <img src="${serv.img}" alt="${serv.alt}">
+          </div>
+          <div class="service-inner">
+            <span class="service-rating"><i class="fa-solid fa-star" id="star"></i>${serv.rating}</span>
+            <div class="service-name">${serv.serviceName}</div>
+            <span class="city"><span class='serv-heads'>City: </span>${serv.city}</span>
+            <div class="service-provider">${serv.serviceProvider}</div>
+            <div class="price"><span class='serv-heads'>Pricing: </span>${serv.price}</div>
+            <div class="timing"><span class='serv-heads'>Timing: </span>${serv.timing}</div>
+            <div class="lawn"><span class='serv-heads'>Venue: </span>${serv.lawn}</div>
+            <div class="service-btn m-2">
+              <button class="learn-more-btn add-to-cart">Add to favourites</button>
+            </div>
+          </div>
+        </div>
+      `;
+        });
+      }
+
+      servicesWrapper.innerHTML = ourServices;
+    }
+
+    function filterServices(query) {
+      const filteredServices = services.filter(service =>
+        service.serviceName.toLowerCase().includes(query.toLowerCase())
+      );
+      renderServices(filteredServices);
+    }
+
+    renderServices(services);
+
+    // Event listener for live searc
+    searchInput.addEventListener('input', (e) => {
+      const query = e.target.value;
+      filterServices(query);
+
+    });
+    
+  </script>
+</body>
+
+</html>

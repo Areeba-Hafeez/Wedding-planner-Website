@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Wedding Planner</title>
+    <!--  Link of bootstrap-->
+    <link rel="stylesheet" href="./assest/css/bootstrap.min.css" />
+    <!-- link Of Custom Css  -->
+     <link rel="stylesheet" href="./assest/Contact.css">
+</head>
+<body>
+ <div class="container">
+  <div class="row">
+    <div class="col-sm-12 ">
+   <div class="form">
+     <h2 class="text-center">Login YourSelf</h2>
+    <input type="text" placeholder="First Name" name="firstname">
+    <input type="text" placeholder="Last Name" name="lastname">
+    <input type="email" placeholder="Email address" name="email">
+    <input type="password" placeholder="Password" name="password">
+    <div class="d-flex justify-content-between align-item-center buttonWrapper">
+      <button type="Submit" onClick="handleSubmit()">Login In</button>
+    </div>
+   </div>
+    </div>
+  </div>
+ </div>
+ <script>
+   const handleSubmit = (e)=>{
+    e.preventDefault()
+    alert("jo")
+   }
+ </script>
+</body>
+</html>
